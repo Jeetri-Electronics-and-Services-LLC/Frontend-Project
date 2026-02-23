@@ -1,0 +1,91 @@
+/* Main container */
+.category-access {
+  width: 60%;
+  margin: 20px auto;
+  background: #ffffff;
+  padding: 20px 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  font-family: Arial, sans-serif;
+}
+
+/* Title */
+.category-access h2 {
+  background-color: #8088cb;
+  color: white;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* FORM GRID LAYOUT */
+.category-access form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Change 2 to 4 if needed */
+  gap: 20px;
+  align-items: center;
+}
+
+/* Each field block */
+.category-access form div {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Labels */
+.category-access label {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+/* Inputs and select */
+.category-access input,
+.category-access select {
+  padding: 8px 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #f2f2f2;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+/* Focus highlight */
+.category-access input:focus,
+.category-access select:focus {
+  border-color: #8088cb;
+  outline: none;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(71, 78, 147, 0.5);
+}
+
+/* Button section full width */
+.category-access-button {
+  grid-column: span 2; /* Full width button */
+  padding: 10px;
+  background-color: #8088cb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.category-access-button:hover {
+  background-color: #72BAA9;
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .category-access form {
+    grid-template-columns: 1fr; /* Mobile = 1 column */
+  }
+
+  .category-access-button {
+    grid-column: span 1;
+  }
+}

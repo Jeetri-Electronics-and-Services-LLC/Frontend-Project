@@ -1,0 +1,122 @@
+/* PAGE WRAPPER */
+.tenantInvoice-wrapper {
+  width: 100%;
+  transition: margin-left 0.3s ease;
+}
+
+/* MOVE WHEN SIDEBAR OPEN */
+.tenantInvoice-wrapper.sidebar-open {
+  margin-left: 260px; /* CHANGE THIS TO YOUR SIDEBAR WIDTH */
+}
+
+/* CENTER PAGE */
+.tenantInvoice-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  background: #f4f6f9;
+  padding: 40px;
+}
+
+/* MAIN BOX */
+.tenantInvoice-box {
+  width: 90%;
+  max-width: 1100px;
+  background: white;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0px 10px 25px rgba(0,0,0,0.12);
+}
+
+/* TITLE */
+.tenantInvoice-box h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* CUSTOMER INFO */
+.tenantInvoice-customerInfo {
+  display: flex;
+  justify-content: space-between;
+  background: #eef2ff;
+  padding: 12px 16px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+/* GRID FORM */
+.tenantInvoice-formGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px 40px;
+}
+
+/* ROW */
+.tenantInvoice-row {
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+/* LABEL */
+.tenantInvoice-label {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+/* INPUT */
+.tenantInvoice-input {
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background: #f9fafb;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+/* INPUT FOCUS */
+.tenantInvoice-input:focus {
+  outline: none;
+  border-color: #4f46e5;
+  background: #eef2ff;
+}
+
+/* HIGHLIGHT WHEN VALUE ENTERED */
+.tenantInvoice-activeRow {
+  background: #e0f7fa;
+  border-left: 4px solid #00acc1;
+}
+
+/* GRAND TOTAL */
+.tenantInvoice-totalRow {
+  grid-column: span 2;
+  background: #fff3cd;
+  padding: 12px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+/* BUTTON */
+.tenantInvoice-buttonBox {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.tenantInvoice-buttonBox button {
+  padding: 12px 30px;
+  background: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.tenantInvoice-buttonBox button:hover {
+  background: #3730a3;
+}

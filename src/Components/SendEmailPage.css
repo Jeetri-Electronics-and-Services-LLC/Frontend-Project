@@ -1,0 +1,101 @@
+/* Basic styling for the Send Email Page */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.email-page-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+    width: 100%;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.email-pdf-wrapper {
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 60px); /* Full height minus the title */
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.email-form-container,
+.pdf-preview-container {
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+.email-form-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.email-form-container input{
+    padding: 10px;
+    
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.email-form-container textarea {
+    padding: 10px;
+    margin-top: 5px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    height: 200px;
+}
+
+.email-form-container button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.email-form-container button:hover {
+    background-color: #45a049;
+}
+
+.pdf-preview-container h3 {
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.pdf-container {
+    height: calc(100% - 70px); /* Adjust height for the PDF to fit within the container */
+    border: 1px solid #ddd;
+}
+
+button {
+    background-color: #008CBA;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #007B9E;
+}

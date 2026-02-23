@@ -1,0 +1,81 @@
+/* MAIN CONTENT WRAPPER */
+.tenantEstimate-main {
+  width: 100%;
+  transition: 0.3s;
+}
+
+/* IF SIDEBAR PUSHES CONTENT */
+.sidebar-open {
+  margin-left: 250px; /* change to your sidebar width */
+}
+
+/* PAGE CENTER */
+.tenantEstimate-page {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  background: #f4f6f9;
+  padding: 30px;
+}
+
+/* BOX */
+.tenantEstimate-box {
+  width: 100%;
+  max-width: 950px;
+  background: white;
+  padding: 25px 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* GRID */
+.tenantEstimate-formGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px 20px;
+}
+
+/* ROW */
+.tenantEstimate-row {
+  display: flex;
+  flex-direction: column;
+}
+
+/* INPUT */
+.tenantEstimate-input {
+  padding: 7px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+/* ACTIVE */
+.tenantEstimate-activeRow {
+  background: #e0f7fa;
+  padding: 6px;
+  border-radius: 6px;
+}
+
+/* TOTAL */
+.tenantEstimate-totalRow {
+  grid-column: span 2;
+  background: #fff3cd;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+/* BUTTONS */
+.tenantEstimate-buttonBox {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.tenantEstimate-buttonBox button {
+  padding: 10px 20px;
+  margin: 5px;
+  background: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}

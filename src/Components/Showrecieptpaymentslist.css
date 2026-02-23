@@ -1,0 +1,54 @@
+.show-receipt-payment-list {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 95%;
+    margin-top: 30px;
+    margin-left: 20px;
+    transition: margin-left 0.3s ease;
+}
+.show-receipt-payment-list.open{
+    margin-left: 250px;
+    transition: margin-left 0.3s ease;
+}
+.show-receipt-payment-list h2 {
+    text-align: center;
+    color: #444;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.show-receipt-payment-list-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.show-receipt-payment-list-table th,
+.show-receipt-payment-list-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.show-receipt-payment-list-table th {
+    background-color: #E5D9F2;
+    color: #333;
+    font-weight: bold;
+}
+
+.show-receipt-payment-list-table tr:hover {
+    background-color: #f9f9f9;
+}
+
+.show-receipt-payment-list-table td {
+    color: #555;
+}
+
+.show-receipt-payment-list-table td[colSpan="7"] {
+    text-align: center;
+    color: #999;
+    font-style: italic;
+}

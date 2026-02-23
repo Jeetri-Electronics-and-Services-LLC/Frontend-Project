@@ -1,0 +1,82 @@
+.brand-list {
+    width: 95%;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow-x: auto;
+    margin-left: 20px;
+    transition: margin-left 0.3s ease;
+}
+
+.brand-list.open{
+    margin-left: 250px;
+    transition: margin-left 0.3s ease;
+}
+
+.brand-list h1 {
+    text-align: center;
+    color: #333;
+    font-family: sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.brand-list table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border: none;
+}
+
+.brand-list thead {
+    background-color: #007BFF;
+    color: white;
+}
+
+.brand-list th {
+    padding: 12px 15px;
+    text-align: left;
+    word-wrap: break-word;
+    white-space: normal;
+    background-color: #E5D9F2;
+    border-bottom: 1px solid #ddd;
+    color: #444;
+}
+
+.brand-list td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+.brand-list tbody tr {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.brand-list tbody tr:hover {
+    background-color: #f0f8ff;
+    transform: translateY(-2px);
+}
+
+.brand-list td {
+    color: #555;
+}
+
+.brand-list td:nth-child(1) {
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+
+    th,
+    td {
+        padding: 10px;
+        font-size: 14px;
+        /* Adjust font size for smaller screens */
+    }
+}

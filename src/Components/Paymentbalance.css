@@ -1,0 +1,80 @@
+.payment-balance {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 400px;
+    margin: auto;
+}
+
+.payment-balance h1 {
+    text-align: center;
+    color: #444;
+    margin-bottom: 25px;
+    font-size: 26px;
+    font-family: 'Arial', sans-serif;
+}
+
+.payment-balance-form {
+    display: grid;
+    grid-template-columns: repeat(2fr, 1fr);
+    gap: 20px;
+}
+
+.payment-balance-div {
+    display: flex;
+    flex-direction: column;
+}
+
+.payment-balance-div label {
+    margin-bottom: 10px;
+    color: #666;
+    font-size: 16px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+}
+
+.payment-balance-div input[type="text"],
+.payment-balance-div input[type="number"] {
+    padding: 14px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 10px;
+}
+
+.payment-balance-div input[type="text"]:focus,
+.payment-balance-div input[type="number"]:focus {
+    border-color: #5cb85c;
+    box-shadow: 0 0 5px rgba(92, 184, 92, 0.5);
+    outline: none;
+}
+
+.payment-balance-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.payment-balance-button button {
+    background-color: #474E93;
+    color: white;
+    border: none;
+    padding: 14px 30px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    margin-top: -15px;
+}
+
+.payment-balance-button button:hover {
+    background-color: #72BAA9;
+    transform: translateY(-2px);
+}
+
+.payment-balance-button button:active {
+    transform: translateY(0);
+}

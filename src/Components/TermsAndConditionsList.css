@@ -1,0 +1,129 @@
+/* .terms-condition-list-conatiner {
+    max-width: 1300px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.terms-condition-list-conatiner h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.terms-condition-list-conatiner table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.terms-condition-list-conatiner thead {
+    background-color: #007BFF;
+    color: white;
+}
+
+.terms-condition-list-conatiner th,
+.terms-condition-list-conatiner td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+    color: black;
+}
+
+.terms-condition-list-conatiner button {
+    padding: 6px 12px;
+    background-color: #c15963;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.terms-condition-list-conatiner button:hover {
+    background-color: #fd8a95;
+}
+
+.terms-condition-list-conatiner p {
+    text-align: center;
+    color: #2e2d2d;
+} */
+
+
+
+
+
+
+.terms-condition-list-conatiner {
+    max-width: 95%;
+    margin: 20px auto;
+    padding: 20px;
+    margin-left: 20px;
+    transition: margin-left 0.3s ease;
+}
+.terms-condition-list-conatiner.open{
+    margin-left: 250px;
+    transition: margin-left 0.3s ease;
+}
+.terms-condition-list-conatiner h2 {
+    /* background-color: #E5D9F2;
+    color: rgb(255, 255, 255);
+    border-radius: 7px;
+    padding: 15px; */
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+  /* background-color: #89A8B2; 
+  padding: 10px; */
+}
+
+.terms-condition-list-conatiner table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.terms-condition-list-conatiner thead {
+    background-color: #007BFF;
+    color: white;
+}
+
+.terms-condition-list-conatiner th{
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+    color: black;
+    background-color: #E5D9F2;
+}
+.terms-condition-list-conatiner td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+    color: black;
+}
+
+.terms-condition-list-conatiner button {
+    padding: 6px 12px;
+    background-color: #66785F;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.terms-condition-list-conatiner button:hover {
+    background-color: #074799;
+    transform: translateY(-2px);
+}
+
+.terms-condition-list-conatiner p {
+    text-align: center;
+    color: #2e2d2d;
+}

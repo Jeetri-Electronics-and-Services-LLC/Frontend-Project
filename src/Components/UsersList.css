@@ -1,0 +1,100 @@
+.user-list {
+    width: 95%;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow-x: auto;
+    margin-left: 20px;
+    transition: margin-left 0.3s ease;
+    position: relative; 
+}
+
+.user-list.open {
+    margin-left: 250px;
+    transition: margin-left 0.3s ease;
+}
+
+.user-list h2 {
+    position: fixed; 
+    top: 1; 
+    background-color: #ffffff; 
+    color: #333;
+    font-family: sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    z-index: 1; 
+    padding: 10px 0; 
+}
+
+.user-list table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 70px; 
+}
+
+.user-list thead {
+    background-color: #818486;
+    color: #444;
+}
+
+.user-list th {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    word-wrap: break-word;
+    white-space: normal;
+    background-color: #E5D9F2;
+}
+
+.user-list td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+.user-list tbody tr {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.user-list tbody tr:hover {
+    background-color: #f0f8ff; 
+    transform: translateY(-2px); 
+}
+
+.user-list td {
+    color: #555;
+}
+
+.user-list td:nth-child(1) {
+    font-weight: bold;
+}
+
+.user-list-table button {
+    background-color: #66785F;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .user-list-table button:hover {
+    background-color: #074799;
+    transform: translateY(-2px);
+  }
+  
+  .user-list-table button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }

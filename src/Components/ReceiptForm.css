@@ -1,0 +1,99 @@
+/* Main container */
+.product-list {
+  width: 95%;
+  margin-left: 30px;
+  padding: 15px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  transition: margin-left 0.3s ease;
+}
+
+/* When sidebar open */
+.product-list.open {
+  margin-left: 260px;
+}
+
+/* Heading */
+.product-list h2 {
+  background-color: #474E93;
+  color: white;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+/* Table */
+.product-list-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+/* Table Head */
+.product-list-table thead tr {
+  background-color: #89A8B2;
+  color: white;
+}
+
+.product-list-table th,
+.product-list-table td {
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+/* ================= ROW HOVER EFFECT ================= */
+.product-list-table tbody tr:hover {
+  background-color: #E8F5FF;   /* Light blue */
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+/* Highlight specific column on hover */
+.product-list-table tbody tr:hover td {
+  color: #000;
+  font-weight: 500;
+}
+
+/* Alternate row color */
+.product-list-table tbody tr:nth-child(even) {
+  background-color: #F9F9F9;
+}
+
+/* ================= SELECT DROPDOWN STYLE ================= */
+.product-list-table select {
+  padding: 5px 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background-color: #f2f2f2;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+/* Dropdown hover */
+.product-list-table select:hover {
+  background-color: #72BAA9;
+  color: white;
+  border-color: #474E93;
+}
+
+/* Dropdown focus */
+.product-list-table select:focus {
+  outline: none;
+  border: 2px solid #474E93;
+  background-color: white;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  .product-list {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .product-list-table {
+    font-size: 12px;
+  }
+}

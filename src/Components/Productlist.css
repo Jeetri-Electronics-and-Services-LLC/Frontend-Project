@@ -1,0 +1,150 @@
+/* ================= MAIN FORM ================= */
+
+.create-product-form {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  margin-left: 30px;
+  transition: margin-left 0.3s ease;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.create-product-form.open {
+  margin-left: 260px;
+}
+
+/* ================= HEADER ================= */
+
+.create-product-form h1 {
+  background-color: #ecf0f1;
+  color: white;
+  border-radius: 7px;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+/* ================= SECTIONS ================= */
+
+.form-section {
+  border: 2px solid #E0E0E0;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  background-color: #FAFAFA;
+}
+
+.form-section h3 {
+  background-color: #474E93;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  display: inline-block;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+/* ================= GRID 4 COLUMNS ================= */
+
+.form-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .form-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ================= FORM GROUP ================= */
+
+.form-group {
+  background-color: white;
+  padding: 8px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+/* Highlight column on focus */
+.form-group:focus-within {
+  background-color: #E8F5FF;
+  box-shadow: 0 0 8px whitesmoke;
+}
+
+/* Labels */
+.form-group label {
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 5px;
+  display: block;
+}
+
+/* Inputs */
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #EEEEEE;
+}
+
+/* Focus input */
+.form-group input:focus,
+.form-group select:focus {
+  border: 2px solid #474E93;
+  outline: none;
+  background-color: white;
+}
+
+/* ================= BRAND CATEGORY PORTFOLIO COLORS ================= */
+
+.brand-group {
+  background-color: #F0F7FF;
+  border-left: 4px solid #474E93;
+}
+
+.category-group {
+  background-color: #F7FFF0;
+  border-left: 4px solid #72BAA9;
+}
+
+.portfolio-group {
+  background-color: #FFF0F5;
+  border-left: 4px solid #E91E63;
+}
+
+/* ================= SUBMIT BUTTON ================= */
+
+.submit-row {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.submit-btn {
+  padding: 8px 18px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  background-color: #474E93;
+  color: white;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #72BAA9;
+  transform: translateY(-2px);
+}

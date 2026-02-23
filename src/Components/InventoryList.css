@@ -1,0 +1,101 @@
+
+.inventory-container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  
+  .inventory-header {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .inventory-header h1 {
+    font-size: 2em;
+  margin: 0; 
+  }
+  
+ 
+  .input-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .input-form input {
+    flex: 1 1 100px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .input-form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .input-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  
+  .inventory-list-container {
+    max-height: 400px; 
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .inventory-list {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .inventory-list th,
+  .inventory-list td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .inventory-list th {
+    background-color: #f2f2f2;
+    color: black;
+  }
+  
+  .inventory-list tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .inventory-list tr:hover {
+    background-color: #ddd;
+  }
+  
+  
+  .inventory-list button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .inventory-list .edit-button {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .inventory-list .delete-button {
+    background-color: #f44336;
+    color: white;
+  }
+  

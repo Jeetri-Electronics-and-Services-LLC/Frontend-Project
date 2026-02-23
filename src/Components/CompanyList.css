@@ -1,0 +1,179 @@
+.company-list {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    margin-left: 20px;
+    transition: margin-left 0.3s ease;
+}
+.company-list.open{
+    margin-left: 250px;
+    transition: margin-left 0.3s ease;
+}
+.company-list-div {
+    display: flex;
+    flex-direction: column;
+}
+
+.company-list-div-one {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.company-list-div-one h3 {
+    font-family: sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.company-list-div-one-form{
+    /* display: flex;
+    flex-direction: column; */
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    padding: 10px;
+}
+
+.company-list-div-one-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    margin-right: 30px;
+}
+
+.company-list-div-one-form input[type="text"] {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    transition: border-color 0.3s;
+    
+}
+
+.company-list-div-one-form input[type="text"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.company-list-div-one-form button {
+    padding: 10px 15px;
+    border: none;
+    width: 150px;
+    border-radius: 4px;
+    background-color: #474E93;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-right: 10px;
+}
+
+.company-list-div-one-form button:hover {
+    background-color: #72BAA9;
+    transform: translateY(-2px);
+}
+
+.company-list-div-one-form button[type="button"] {
+    background-color: #474E93;
+}
+
+.company-list-div-one-form button[type="button"]:hover {
+    background-color: #72BAA9;
+    transform: translateY(-2px);
+}
+
+.comapny-list-div-two {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+}
+
+.comapny-list-div-two h2 {
+    margin-bottom: 15px;
+    font-family: sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.company-list-div-two-table {
+    margin-top: 30px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.company-list-div-two-table th,
+.company-list-div-two-table td {
+    padding: 10px;
+    text-align: left;
+}
+
+.company-list-div-two-table th {
+    background-color: #E5D9F2;
+}
+
+.company-list-div-two-table tr:hover {
+    background-color: #f9f9f9;
+}
+
+.company-list-div-two-button {
+    background-color: #474E93;
+    color: white;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 10px;
+}
+
+.company-list-div-two-button:hover {
+    background-color: #72BAA9;
+    transform: translateY(-2px);
+}
+
+.company-list-div-two-button-two {
+    background-color: #66785F;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 5px;
+}
+
+.company-list-div-two-button-two:hover {
+    background-color:#074799;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 600px) {
+    .company-list {
+        padding: 10px;
+    }
+
+    button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    input[type="text"] {
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,121 @@
+.estimate-list-container {
+    width: 95%;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin-left: 20px;
+    transition: margin-left 0.3s ease;
+}
+.estimate-list-container.open{
+    margin-left: 250px;
+    transition: margin-left 0.3s ease;
+}
+.estimate-list-container h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.estimate-list-container label {
+    color: #444;
+    margin-right: 10px;
+    font-size: 14px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+
+}
+
+.estimate-list-container select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    font-size: 14px;
+    margin-bottom: 20px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    margin-right: 10px;
+    height: 37px;
+}
+
+.estimate-list-container select:focus {
+    border-color: #28a745;
+    box-shadow: 0 0 5px rgba(40, 167, 69, 0.5);
+    outline: none;
+}
+
+.estimate-list-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.estimate-list-table th{
+    padding: 5px;
+    text-align: left;
+    
+} 
+.estimate-list-table td {
+    padding: 12px;
+    text-align: left;  
+    height: 5px;
+}
+
+.estimate-list-table th {
+    background-color: #E5D9F2;
+    color: #2c3e50;
+    padding: 15px;
+}
+
+.estimate-list-table tr {
+    transition: background-color 0.3s;
+}
+
+.estimate-list-table tr:hover {
+    background-color: #EEEEEE;
+}
+
+.estimate-list-table td select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+    margin-top: 10px;
+}
+
+.estimate-list-table td select:focus {
+    border-color: #28a745;
+    outline: none;
+}
+
+.estimate-list-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.estimate-list-pagination button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #66785F;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    margin: 0 10px;
+}
+
+.estimate-list-pagination button:hover {
+    background-color: #5a6b4e;
+    transform: translateY(-2px);
+}
+
+.estimate-list-pagination button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}

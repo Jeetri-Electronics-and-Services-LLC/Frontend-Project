@@ -1,0 +1,85 @@
+.edit-receipt-payment {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 600px;
+    margin: auto;
+}
+
+.edit-receipt-payment h2 {
+    text-align: center;
+    color: #444;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.edit-receipt-payment-div {
+    margin-bottom: 20px;
+}
+
+.edit-receipt-payment-div p {
+    font-weight: bold;
+    color: #555;
+}
+
+.edit-receipt-payment-div label {
+    margin-bottom: 5px;
+    color: #666;
+    display: block;
+    font-size: 14px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+}
+
+.edit-receipt-payment-div input[type="text"],
+.edit-receipt-payment-div input[type="date"],
+.edit-receipt-payment-div input[type="number"],
+.edit-receipt-payment-div select {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    width: 90%;
+    /* Full width for inputs and selects */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.edit-receipt-payment-div input[type="text"]:focus,
+.edit-receipt-payment-div input[type="date"]:focus,
+.edit-receipt-payment-div input[type="number"]:focus,
+.edit-receipt-payment-div select:focus {
+    border-color: #5cb85c;
+    box-shadow: 0 0 5px rgba(92, 184, 92, 0.5);
+    outline: none;
+    background-color: #e2e0e0;
+}
+
+.edit-receipt-payment-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.edit-receipt-payment-button button {
+    background-color: #474E93;
+    color: white;
+    border: none;
+    padding: 14px 30px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.edit-receipt-payment-button button:hover {
+    background-color: #72BAA9;
+    transform: translateY(-2px);
+}
+
+.edit-receipt-payment-button button:active {
+    transform: translateY(0);
+}

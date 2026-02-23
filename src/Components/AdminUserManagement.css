@@ -1,0 +1,101 @@
+.adminContainer {
+  width: 95%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: margin-left 0.3s ease;
+  margin-left: 20px;
+}
+.adminContainer.open{
+  margin-left: 250px;
+  transition: margin-left 0.3s ease;
+}
+
+.adminContainer h1 {
+  font-family: sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.adminForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Add border for every group */
+.inputGroupBox {
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+  /* Allows wrapping for smaller screens */
+  justify-content: space-between;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #ffffff;
+  transition: background-color 0.3s ease;
+  /* Smooth background change */
+}
+
+/* Highlight group background when input is active */
+.inputGroupBox:has(input:focus) {
+  background-color: #d4d5d5;
+}
+
+.inputGroupBox:has(select:focus) {
+  background-color: #d4d5d5;
+}
+
+.adminInputGroup {
+  display: flex;
+  border-radius: 6px;
+  flex-direction: column;
+  flex: 1;
+  /* Equal width for all fields */
+  min-width: 150px;
+  /* Prevents fields from shrinking too much */
+}
+
+/* Label styling */
+.adminInputGroup label {
+  font-size: 14px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 500;
+}
+
+
+/* Underline style for input */
+.adminInput {
+  padding: 5px 0;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+/* Highlight input background when value is entered */
+.adminInput:focus,
+.adminInput:not(:placeholder-shown) {
+  background-color: #f9fafb;
+  border-bottom: 2px solid #565656;
+}
+
+/* Button styling */
+.adminButton {
+  width: 150px;
+  padding: 10px;
+  background-color: #474E93;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.adminButton:hover {
+  background-color: #72BAA9;
+}
